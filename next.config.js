@@ -4,6 +4,9 @@ const withPWA = require('next-pwa');
 const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = withPWA({
+  images: {
+    domains: ['images1.fanpop.com'],
+  },
   pwa: {
     dest: 'public',
     disable: !isProd,

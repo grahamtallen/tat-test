@@ -18,6 +18,32 @@ const GlobalStyles = createGlobalStyle`
   html, body, #__next {
     height: 100%;
   }
+
+body {
+  margin: 0;
+  font-family: agency-fb, sans-serif;
+}
+
+.navheader {
+  padding: 0 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .addr {
+    font-size: 0.65rem;
+  }
+  background-color: #ae52d4;
+  color: white;
+}
+
+.option-icon {
+  font-size: 1rem;
+}
+
+.emphasis {
+  color: #7b1fa2;
+}
 `;
 
 export default GlobalStyles;
