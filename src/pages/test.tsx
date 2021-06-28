@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import * as S from '../components/Test/styles';
 //import currentImage from '../assets/TAT.jpg';
 const styles = {};
@@ -10,17 +9,13 @@ interface GridBox {
   emoji?: JSX.Element;
 }
 
-const myLoader = () => {
-  return `https://images1.fanpop.com/images/photos/1300000/Example-of-Thematic-Apperception-Test-psychology-1310980-305-400.gif`;
-};
+const imgSrc = `https://images1.fanpop.com/images/photos/1300000/Example-of-Thematic-Apperception-Test-psychology-1310980-305-400.gif`;
 
 export default function Test(props: {
   headerText?: string;
   image?: JSX.Element;
   gridboxes?: GridBox[];
 }) {
-  const currentImage =
-    'https://images1.fanpop.com/images/photos/1300000/Example-of-Thematic-Apperception-Test-psychology-1310980-305-400.gif';
   const {
     headerText = (
       <span>
@@ -29,9 +24,7 @@ export default function Test(props: {
         <span className="emphasis">feeling</span>?
       </span>
     ),
-    image = (
-      <Image loader={myLoader} width="100%" height="100%" src={'me.png'} />
-    ),
+    image = <img width="100%" height="100%" src={imgSrc} />,
     gridboxes = [
       {
         isTyping: false,
