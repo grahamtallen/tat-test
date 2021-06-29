@@ -1,4 +1,5 @@
 import { Layout, Drawer, Input } from 'antd';
+import ImageReveal from 'components/ImageReveal';
 import React, { useState, useEffect } from 'react';
 const { Search } = Input;
 const { Header, Content } = Layout;
@@ -17,7 +18,7 @@ const BottomInput = () => {
 const imgSrc = `https://images1.fanpop.com/images/photos/1300000/Example-of-Thematic-Apperception-Test-psychology-1310980-305-400.gif`;
 export default function Splash(props: any) {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const image = <img width="100%" height="100%" src={imgSrc} />;
+  const image = <ImageReveal imageSrc={imgSrc} size={200} />;
   useEffect(() => {
     setTimeout(() => {
       setDrawerOpen(true);
@@ -49,17 +50,18 @@ export default function Splash(props: any) {
       <Content
         style={{
           height: '100vh',
-          background: `url(${imgSrc})`,
           backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center center',
           display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'flex-start',
+          justifyContent: 'flex-start',
+          alignItems: 'center',
+          flexDirection: 'column',
           fontSize: '1.1rem',
         }}
       >
         {headerText}
+        {image}
       </Content>
       <Drawer
         height={49}

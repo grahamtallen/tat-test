@@ -7,21 +7,25 @@ html {
 }
 svg {
   background-size: contain;
-  width: 40vmin;
+  width: 80vmin;
   height: auto;
   display: block;
-  margin: 30vmin auto;
 }
 text {
-  font-size: 10px;
+  font-size: 8px;
   transition: all 0.4s ease-out;
   font-weight: 900;
   font-family: arial;
 
   transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
 }
 svg:hover text {
   transition: all 0.4s ease-in;
   font-size: 600px;
-  transform: translate(0, 23px);
+  transform: translate(0, 25px);
+  -webkit-transform: translate(0, 25px);
 }

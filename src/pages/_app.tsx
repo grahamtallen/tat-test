@@ -1,6 +1,7 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import GlobalStyles from 'styles/global';
+import '../components/ImageReveal/svg.css';
 import 'antd/dist/antd.css';
 
 function App({ Component, pageProps }: AppProps) {
