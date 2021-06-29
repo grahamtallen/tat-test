@@ -1,0 +1,28 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #e3dfd2;
+}
+svg {
+  background: url('https://farm9.staticflickr.com/8760/17195790401_ceeeafcddb_o.jpg');
+  background-size: cover;
+  width: 40vmin;
+  height: auto;
+  display: block;
+  margin: 30vmin auto;
+}
+text {
+  font-size: 10px;
+  transition: all 0.4s ease-out;
+  font-weight: 900;
+  font-family: arial;
+
+  transform: translate(0, 0);
+}
+svg:hover text {
+  transition: all 0.4s ease-in;
+  font-size: 600px;
+  transform: translate(0, 23px);
+}
