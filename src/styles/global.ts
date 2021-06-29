@@ -44,6 +44,16 @@ body {
 .emphasis {
   color: #7b1fa2;
 }
+
+/* Antd overrides */
+
+.ant-drawer-body {
+  padding: 0 !important;
+}
+.ant-input-search > .ant-input-group > .ant-input-group-addon:last-child {
+  left: 0;
+}
+
 `;
 
 export default GlobalStyles;
