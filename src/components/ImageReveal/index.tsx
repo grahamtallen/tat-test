@@ -32,7 +32,7 @@ const ImageReveal = ({
         height="49"
         mask="url(#mask)"
         fillOpacity="1"
-        fill="#E3DFD2"
+        fill="#ae52d4"
       />
     </svg>
   );

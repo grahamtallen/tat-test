@@ -25,7 +25,7 @@ export default function Splash(props: any) {
     }, DELAY_BEFORE_SHOWING_IMAGE);
   });
   const drawerStyle = {
-    background: '#001529',
+    background: '#7b1fa2',
     padding: 'none',
   };
   const {
@@ -42,9 +42,10 @@ export default function Splash(props: any) {
       <Header
         style={{
           color: 'white',
+          backgroundColor: '#ae52d4',
         }}
       >
-        Header
+        #0x9402d84jasd28 - There are 3 other testers.
       </Header>
 
       <Content
